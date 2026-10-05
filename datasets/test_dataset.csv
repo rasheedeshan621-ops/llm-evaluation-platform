@@ -1,0 +1,5 @@
+question,context,reference_answer
+"What is Python?","Python is a high-level programming language used for web development, automation, and data analysis.","Python is a high-level programming language commonly used for web development, automation, and data analysis."
+"What is RAG?","RAG retrieves relevant information from external knowledge sources and provides it to an LLM.","RAG combines retrieval of external information with language model generation."
+"What is FastAPI?","FastAPI is a Python web framework used to build APIs.","FastAPI is a Python framework for building APIs."
+"What is BM25?","BM25 is a ranking algorithm commonly used for information retrieval.","BM25 is an information retrieval ranking algorithm."
