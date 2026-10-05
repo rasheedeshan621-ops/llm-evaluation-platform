@@ -28,7 +28,7 @@ const Login = () => {
     setError("");
 
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/auth/login",
+      "https://llm-evaluation-platform-6v8t.onrender.com/api/auth/login",
       {
         email: form.email,
         password: form.password,

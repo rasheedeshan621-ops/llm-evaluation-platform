@@ -20,7 +20,7 @@ const History = () => {
       setError("");
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/api/evaluate/",
+        "https://llm-evaluation-platform-6v8t.onrender.com/api/evaluate/",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -49,7 +49,7 @@ const History = () => {
       setError("");
 
       const response = await axios.get(
-        `http://127.0.0.1:8000/api/evaluate/${evaluationId}`,
+        `https://llm-evaluation-platform-6v8t.onrender.com/api/evaluate/${evaluationId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

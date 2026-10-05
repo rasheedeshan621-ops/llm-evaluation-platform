@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import ClaimsEvidence from "../components/benchmark/ClaimsEvidence";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://llm-evaluation-platform-6v8t.onrender.com";
 
 export default function DatasetBenchmark() {
   const [dataset, setDataset] = useState(null);
@@ -114,7 +114,7 @@ export default function DatasetBenchmark() {
       const token = localStorage.getItem("access_token");
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/datasets/upload",
+        "https://llm-evaluation-platform-6v8t.onrender.com/api/datasets/upload",
         formData,
         {
           headers: {
@@ -219,7 +219,7 @@ export default function DatasetBenchmark() {
       const token = localStorage.getItem("access_token");
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/evaluate/compare",
+        "https://llm-evaluation-platform-6v8t.onrender.com/api/evaluate/compare",
         payload,
         {
           headers: {

@@ -43,7 +43,7 @@ function QuickEvaluation() {
     const fetchProviders = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/models/"
+          "https://llm-evaluation-platform-6v8t.onrender.com/api/models/"
         );
 
         setProviders(response.data);
@@ -76,7 +76,7 @@ function QuickEvaluation() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/evaluate/quick",
+        "https://llm-evaluation-platform-6v8t.onrender.com/api/evaluate/quick",
         {
           question,
           context,
